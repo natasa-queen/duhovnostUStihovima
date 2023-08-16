@@ -1,5 +1,9 @@
 
 
+body {
+    background-color: pink;
+}
+
 nav {
     background: transparent;
 }
@@ -24,3 +28,27 @@ nav {
     position: absolute;
     top: 70%;
 }
+
+.kontejner {
+    padding-top: 50px;
+    background-color: pink;
+    min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

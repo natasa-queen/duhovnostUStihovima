@@ -1,17 +1,13 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 
-import {Script} from "gatsby";
-
-
-import Header from '../components/Header'
-// import {Seo} from "./Seo";
+import '../assets/css/main.css'
 
 const Layout = ({children}) => {
     return (
         <>
+
             <Navbar />
-            {/*<Header />*/}
 
             {children}
         </>
