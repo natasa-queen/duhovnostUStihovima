@@ -4,7 +4,9 @@ import {Script} from "gatsby";
 import { Seo } from '../components/Seo'
 
 import '../assets/css/main.css'
+
 import Header from "../components/Header";
+import Lista from '../components/lista-pesama'
 
 
 export default function Home() {
@@ -13,7 +15,7 @@ export default function Home() {
 
         <Header />
 
-        <h2>Cao i tebi</h2>
+        <Lista />
 
       </Layout>
   )
@@ -31,15 +33,13 @@ export function Head() {
 
             <link rel="stylesheet" type="text/css" href={"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"} />
 
-            <link
-                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-                rel="stylesheet"
-            />
+            {/*<link*/}
+            {/*    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"*/}
+            {/*    rel="stylesheet"*/}
+            {/*/>*/}
 
-            <link
-                href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-                rel="stylesheet"
-            />
+
+
 
             {/*<link*/}
             {/*    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"*/}
@@ -47,7 +47,7 @@ export function Head() {
             {/*/>*/}
 
             <Script src={"https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"}/>
-            <Script src={"https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"}/>
+            {/*<Script src={"https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"}/>*/}
         </>
     )
 }

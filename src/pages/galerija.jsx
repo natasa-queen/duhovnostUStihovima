@@ -15,6 +15,8 @@ const Galerija = () => {
 }
 export default Galerija
 
+
+
 export function Head() {
     return (
         <>

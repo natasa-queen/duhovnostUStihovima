@@ -25,5 +25,29 @@ module.exports = {
       },
     },
 
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `md`,
+        // Path to the directory
+        path: `${__dirname}/content`,
+      },
+    },
+
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {},
+    },
+
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
+
+
+
   ],
 }
