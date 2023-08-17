@@ -1,5 +1,5 @@
 ---
-title: Hodočašća u Bosni i Hercegovini
+title: Hodocasca u Bosni i Hercegovini
 objavljeno: (*objavljeno u "Katoličkom tjedniku" (br. 26/23))
 datum: 17. 8. 2023.
 ---
