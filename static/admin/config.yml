@@ -18,3 +18,13 @@ collections:
       - {label: 'Objavljeno', name: 'objavljeno', widget: 'string', required: false}
       - {label: 'Datum', name: 'datum', widget: 'date', format: "D. M. YYYY."}
       - {label: 'Body', name: 'body', widget: 'text'}
+
+  - name: 'poruke'
+    preview: false
+    label: 'Mudre poruke'
+    folder: 'content/poruke'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Pisac', name: 'pisac', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'text'}
