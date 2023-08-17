@@ -1,6 +1,6 @@
 ---
 title: Hodocasca u Bosni i Hercegovini
-objavljeno: (*objavljeno u "Katoličkom tjedniku" (br. 26/23))
+objavljeno: ""
 datum: 17. 8. 2023.
 ---
 Hodočašće svako veoma je važno,
