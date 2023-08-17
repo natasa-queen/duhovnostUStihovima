@@ -7,17 +7,21 @@ const Lista = () => {
 
     const data = useStaticQuery(graphql`
         query {
-          allMarkdownRemark(sort: {frontmatter: {datum: DESC}}) {
+          allFile(filter: {relativeDirectory: {eq: "pesme"}}) {
             totalCount
             edges {
               node {
-                frontmatter {
-                  title
-                }
                 id
-                parent {
-                  ... on File {
-                    name
+                childMarkdownRemark {
+                  frontmatter {
+                    title
+                  }
+                  html
+                  parent {
+                    ... on File {
+                      id
+                      name
+                    }
                   }
                 }
               }
@@ -26,10 +30,35 @@ const Lista = () => {
         }
   `)
 
-    const total = data.allMarkdownRemark.totalCount
-    const pesme = data.allMarkdownRemark.edges
 
 
+
+  //   const data = useStaticQuery(graphql`
+  //       query {
+  //         allMarkdownRemark(sort: {frontmatter: {datum: DESC}}) {
+  //           totalCount
+  //           edges {
+  //             node {
+  //               frontmatter {
+  //                 title
+  //               }
+  //               id
+  //               parent {
+  //                 ... on File {
+  //                   name
+  //                 }
+  //               }
+  //             }
+  //           }
+  //         }
+  //       }
+  // `)
+
+    // const total = data.allMarkdownRemark.totalCount
+    // const pesme = data.allMarkdownRemark.edges
+
+    const total = data.allFile.totalCount
+    const pesme = data.allFile.edges
 
     return(
 
@@ -45,10 +74,12 @@ const Lista = () => {
 
                     // const slug = slugify(node.frontmatter.title, {lower:true})
 
-                    const pesmaName = node.parent.name
+                    // const pesmaName = node.parent.name
+
+                    const pesmaName = node.childMarkdownRemark.parent.name
 
                     return(
-                        <li className="list-group-item d-flex justify-content-between align-items-center spisak-item">
+                        <li key={node.id} className="list-group-item d-flex justify-content-between align-items-center spisak-item">
                             <div className="d-flex align-items-center">
 
                                 <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="slika"
@@ -57,7 +88,8 @@ const Lista = () => {
                                 <div className="ms-3">
 
                                     <Link to={pesmaName}>
-                                        <p className="fw-bold mb-1 naslov-pesme">{node.frontmatter.title}</p>
+                                        {/*<p className="fw-bold mb-1 naslov-pesme">{node.frontmatter.title}</p>*/}
+                                        <p className="fw-bold mb-1 naslov-pesme">{node.childMarkdownRemark.frontmatter.title}</p>
                                     </Link>
 
                                 </div>
