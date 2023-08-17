@@ -7,7 +7,7 @@ const Lista = () => {
 
     const data = useStaticQuery(graphql`
         query {
-          allMarkdownRemark {
+          allMarkdownRemark(sort: {frontmatter: {datum: DESC}}) {
             totalCount
             edges {
               node {

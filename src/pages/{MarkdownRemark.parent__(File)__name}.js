@@ -16,7 +16,7 @@ export default function Pesma({ data }) {
 
             <div dangerouslySetInnerHTML={{__html: html}} />
 
-            <Link to="../" className="btn" >Nazad</Link>
+            <Link to="/" className="btn" >Nazad</Link>
         </>
     )
 }
