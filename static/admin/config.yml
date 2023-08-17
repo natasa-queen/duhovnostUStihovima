@@ -27,4 +27,4 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Pisac', name: 'title', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'text'}
+      - { label: 'Poruka', name: 'body', widget: 'text'}
