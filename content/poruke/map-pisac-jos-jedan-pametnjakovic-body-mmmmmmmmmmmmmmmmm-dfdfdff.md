@@ -1,4 +1,4 @@
 ---
-title: Jos jedan pametnjakovic
+pisac: Jos jedan pametnjakovic
 ---
 mmmmmmmmmmmmmmmmm, dfdfdff
