@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 export default function Pesma({ data }) {
 
@@ -15,6 +15,8 @@ export default function Pesma({ data }) {
             <h3>{datum}</h3>
 
             <div dangerouslySetInnerHTML={{__html: html}} />
+
+            <Link to="../" className="btn" >Nazad</Link>
         </>
     )
 }
