@@ -26,5 +26,5 @@ collections:
     create: true
     slug: '{{slug}}'
     fields:
-      - { label: 'Pisac', name: 'pisac', widget: 'string' }
+      - { label: 'Pisac', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'text'}
